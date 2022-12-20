@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Bibou</title>
+</head>
+<body>
+    <main class="main" id="main">
+        <!--==================== HOME ====================-->
+
+
+        <nav class="nav">
+            <a href="#" class="nav__logo">
+                <img src="assets/logo.png" alt="logo">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="/index.html" class="nav__link">Accueil</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/illustrations.html" class="nav__link active-link">Illustrations</a>
+                    </li>
+                </ul>
+
+
+                <!-- Toggle close -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+
+        </nav>
+
+        
+
+        <section class="header">
+            <div class="container__center">
+
+                <img src="assets/hda.jpg" alt="" class="header__image">
+                <p class="centered big__font">
+                    Créer
+                    <span class="first__color">l'illustration</span>
+                    à votre image
+                </p>
+
+            </div>
+        </section>
+
+        <section class="search container__center">
+            <input type="text" class="input search__bar" placeholder="rechercher" id="search-input" onchange="onSearch()">
+            <a class="button search__button" onclick="onSearch()">Rechercher</a>
+        </section>
+
+        <section class="illustrations" id="template-container">
+
+            <!-- <a href="#choose" class="card__image" onclick="chooseIllustration('loulou', 'assets/icon_fleur.png')">
+                <div class="image">
+                    <img src="assets/icon_fleur.png" alt="">
+                </div>
+                <h1>loulou</h1>
+                <h3>5$</h3>
+            </a>
+
+            <a href="#choose" class="card__image" onclick="chooseIllustration('pourquoi', 'assets/icon_symbole.png')">
+                <div class="image">
+                    <img src="assets/icon_symbole.png" alt="">
+                </div>
+                <h1>pourquoi</h1>
+                <h3>5$</h3>
+            </a>
+
+            <a href="#choose" class="card__image" onclick="chooseIllustration('bibou', 'assets/icon_text.png')">
+                <div class="image">
+                    <img src="assets/icon_text.png" alt="">
+                </div>
+                <h1>bibou</h1>
+                <h3>5$</h3>
+            </a> -->
+
+        </section>
+
+        <section class="footer container">
+            <div class="footer__wrapper">
+                <a class="footer__link" onclick="displayContact()">Contact</a>
+                <a href="mentions_legales.html" class="footer__link">Mentions légales</a>
+            </div>
+
+            <div class="copyright">
+                <a>©  2022</a>
+            </div>
+        </section>
+
+        <section class="formulaire" id="formulaire">
+            <div class="close__formulaire" id="formulaire-close">
+                <i class="ri-close-line"></i>
+            </div>
+
+            <img src="" alt="" class="formulaire__image" id="formulaire-image">
+            <div class="input__wrapper">
+                <label for="illustration">Votre illustration:</label>
+                <input type="text" name="illustration" class="input" id="formulaire-illustration" disabled>
+            </div>
+            
+            <div class="input__wrapper">
+                <label for="email">Votre email:</label>
+                <input type="email" name="email" placeholder="Votre email" class="input" id="formulaire-email">
+            </div>
+            <a class="button" id="formulaire-button">Demander le devis</a>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="close__formulaire" id="contact-close">
+                <i class="ri-close-line"></i>
+            </div>
+
+            <div class="input__wrapper">
+                <label for="email">Votre email:</label>
+                <input type="email" name="email-object" placeholder="Votre email" class="input" id="contact-email">
+            </div>
+
+            <div class="input__wrapper">
+                <label for="contact-object">Objet de votre demande:</label>
+                <input type="text" name="contact-object" placeholder="Objet de votre demande" class="input " id="contact-object">
+            </div>
+            <div class="input__wrapper">
+                <label for="contact-body">Votre demande:</label>
+                <textarea placeholder="Votre demande" class="input input__text" id="contact-object"></textarea>
+            </div>
+            
+            
+            <a class="button" id="contact-button">Envoyer</a>
+        </section>
+
+    </main>
+
+    <!--=============== GSAP ===============-->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>    
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/illustration.js"></script>
+
+
+</body>
+</html>
