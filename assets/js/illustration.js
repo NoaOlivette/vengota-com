@@ -12,7 +12,7 @@ const drawings = {
     },
     2: {
         img: 'assets/illustrations/Animaux/dauphin.png',
-        title: 'chat',
+        title: 'dauphin',
         price: '2',
     },
     3: {
