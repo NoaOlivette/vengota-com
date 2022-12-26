@@ -60,7 +60,7 @@ emailjs.send('service_nb02qyh', 'template_viqyk2d', templateParams)
        console.log('SUCCESS!', response.status, response.text);
     }, function(error) {
        console.log('FAILED...', error);
-    });
+});
 
 
 
